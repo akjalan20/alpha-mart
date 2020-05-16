@@ -22,6 +22,7 @@ import com.alphamart.service.ProductService;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController	
+@RequestMapping("/api")
 public class ProductController {
 	
 	@Autowired

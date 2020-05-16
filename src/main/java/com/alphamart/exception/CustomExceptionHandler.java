@@ -28,7 +28,7 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
         return new ResponseEntity<ErrorDetail>(error, HttpStatus.BAD_REQUEST);
     }
 	
-	@ExceptionHandler(InvalidRequestException.class)
+	@ExceptionHandler(DataNotValidException.class)
 	public ResponseEntity<ErrorDetail> handle(DataNotValidException e) {
 		ErrorDetail error = new ErrorDetail();
         error.setMessage(e.getMessage());
