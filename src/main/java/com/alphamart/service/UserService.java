@@ -1,5 +1,7 @@
 package com.alphamart.service;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,6 +11,8 @@ import com.alphamart.repository.UserRepository;
 
 @Service
 public class UserService {
+	
+	final static Logger logger = LogManager.getLogger(UserService.class); 
 	
 	 @Autowired
 	    UserRepository userRepository;

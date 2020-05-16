@@ -20,5 +20,12 @@ public class OrderProduct {
 	    public void setQuantity(Integer quantity) {
 	        this.quantity = quantity;
 	    }
+
+		@Override
+		public String toString() {
+			return "OrderProduct [product=" + product + ", quantity=" + quantity + "]";
+		}
+	    
+	    
 	    
 }

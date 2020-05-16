@@ -98,14 +98,10 @@ public class Cart {
 		return true;
 	}
 
-
 	@Override
 	public String toString() {
-		final int maxLen = 10;
-		return "Cart [cartId=" + cartId + ", totalDue=" + totalDue + ", products="
-				+ (cartDetails != null ? cartDetails.subList(0, Math.min(cartDetails.size(), maxLen)) : null) +  "]";
+		return "Cart [cartId=" + cartId + ", totalDue=" + totalDue + ", cartDetails=" + cartDetails + ", user=" + user
+				+ "]";
 	}
-
-	
 
 }

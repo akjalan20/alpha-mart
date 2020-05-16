@@ -90,10 +90,10 @@ public class Apparel extends Product{
 		return true;
 	}
 
-
 	@Override
 	public String toString() {
 		return "Apparel [type=" + type + ", brand=" + brand + ", design=" + design + "]";
 	}
+
 	
 }
