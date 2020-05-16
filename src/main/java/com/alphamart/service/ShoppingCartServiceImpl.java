@@ -43,7 +43,6 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 		logger.info("Get Product in cart for user: {}", userId);
 		Cart cart = cartRepository.findByUser(new User(userId));
 		cart = calculateTotalDue(cart);
-		logger.info("Cart for user {}:, {}", userId, cart);
 		return cart;
 	}
 
