@@ -190,8 +190,9 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 				totalDue += od.getCartDetailId().getProduct().getPrice() * od.getQuantity();
 			}
 			cart.setTotalDue(totalDue);
+			logger.info("Total due: {} for cart: {}", totalDue, cart.getCartId());
 		}
-		logger.info("Total due: {} for cart: {}", totalDue, cart.getCartId());
+		
 		
 		return cart;
 	}
